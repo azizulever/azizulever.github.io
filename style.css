@@ -317,11 +317,11 @@ span {
 }
 
 /* achievement section */
-.achievement {
+.achievements {
   background: var(--bg-color);
 }
 
-.achievement h2 {
+.achievements h2 {
   margin-bottom: 5rem;
 }
 
@@ -369,11 +369,11 @@ span {
 }
 
 /*project section */
-.project {
+.projects {
   background: var(--second-bg-color);
 }
 
-.project h2 {
+.projects h2 {
   text-align: center;
   font-size: 4.5rem;
   margin-top: -4rem;
@@ -457,25 +457,25 @@ span {
   gap: 2rem;
 }
 
-.contact h2 {
+.contactme h2 {
   margin-bottom: 3rem;
 }
 
-.contact form {
+.contactme form {
   max-width: 70rem;
   margin: 1rem auto;
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.contact form .input-box {
+.contactme form .input-box {
   display: flex;
   justify-content: space-between;
   flex-wrap: warp;
 }
 
-.contact form .input-box input,
-.contact form textarea {
+.contactme form .input-box input,
+.contactme form textarea {
   width: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
@@ -485,15 +485,15 @@ span {
   margin: .7rem 0;
 }
 
-.contact form .input-box input {
+.contactme form .input-box input {
   width: 49%;
 }
 
-.contact form textarea {
+.contactme form textarea {
   resize: none;
 }
 
-.contact form .btn {
+.contactme form .btn {
   margin-top: 2rem;
   cursor: pointer;
 }
@@ -554,15 +554,15 @@ span {
     padding: 10rem 3% 2rem;
   }
 
-  .achievement {
+  .achievements {
     padding-bottom: 7rem;
   }
 
-  .project {
+  .projects {
     padding-bottom: 7rem;
   }
 
-  .contact {
+  .contactme {
     min-height: auto;
   }
 
@@ -624,11 +624,11 @@ span {
     margin-top: 4rem;
   }
 
-  .achievement h2 {
+  .achievements h2 {
     margin-bottom: 3rem;
   }
 
-  .project h2 {
+  .projects h2 {
     margin-bottom: 3rem;
   }
 
@@ -648,7 +648,7 @@ span {
     font-size: 50%;
   }
 
-  .contact form .input-box input {
+  .contactme form .input-box input {
     width: 100%;
   }
 }
