@@ -47,8 +47,11 @@ section {
   z-index: 100;
 }
 
-.header .sticky {
+.sticky {
   border-bottom: .1rem solid rgba(0, 0, 0, .2);
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .logo {
