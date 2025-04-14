@@ -862,3 +862,19 @@ footer {
 .scroll-top.active {
   opacity: 1;
 }
+
+/* Custom Flutter Icon */
+.flutter-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('assets/flutter-icon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Flutter icon color for the font awesome approach */
+.flutter-color {
+  color: #45D1FD;
+}
