@@ -188,6 +188,73 @@ header {
   color: white;
 }
 
+/* Hero section with image */
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Make the hero image match the about image styling exactly */
+.hero-image img {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 5px solid var(--primary-color, #4a6cf7);
+}
+
+.hero-image img:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* If your about section has additional styling, add it here too */
+.about-image img, .hero-image img {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 5px solid var(--primary-color, #4a6cf7);
+}
+
+.about-image img:hover, .hero-image img:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content {
+  flex: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-wrapper {
+    flex-direction: column;
+  }
+  
+  .hero-image {
+    margin-bottom: 2rem;
+    width: 70%;
+  }
+  
+  .hero-content {
+    text-align: center;
+  }
+  
+  .hero-btns {
+    justify-content: center;
+  }
+}
+
 /* About Section */
 #about {
   padding: 100px 0;
