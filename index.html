@@ -1,190 +1,619 @@
 <!DOCTYPE html>
-<html>
-  
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title> Azizul Islam </title>
-  <link rel="icon" href="assets/titlebar.png" type="image/gif/png">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Dev Portfolio | Flutter Developer & Designer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 
 <body>
-  <header class="header">
-    <div class="aside">
-      <div class="logo">
-        <a href="#home"> azizul_ </a>
-      </div>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="#" class="logo">Azizul<span>Islam</span></a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="cta-btn">Hire Me</a>
+        <div class="mobile-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
     </div>
-
-    <i class='bx bx-menu' id="menu-icon"></i>
-    
-    <nav class="navbar">
-      <a href="#home" class="active"> Home </a>
-      <a href="#about"> About Me </a>
-      <a href="#education"> Education </a>
-      <a href="#skills"> Skills </a>
-      <a href="#projects"> Projects </a>
-      <a href="#achievements"> Achievements </a>
-      <a href="#contactme"> Contact Me </a>
-    </nav>
   </header>
 
-  <!--  home section -->
-  <section class="home" id="home">
-    <div class="home-content">
-      <h3> Hi There! This is</h3>
-      <h1> Azizul Islam </h1>
-      <h3> And I'm a <span class="multiple-text"></span> </h3>
-      <p> I am deeply passionate about designing and traveling, as they allow me to explore new perspectives, cultures, and inspirations, and incorporate them into my creative work. </p>
-      <div class="social-media">
-        <a href="https://www.facebook.com/azizulever/" target="_blank"><i class='bx bxl-facebook'></i></a>
-        <a href="https://www.linkedin.com/in/azizulever/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-        <a href="https://twitter.com/azizulever" target="_blank"><i class='bx bxl-twitter'></i></a>
-        <a href="https://github.com/azizulever" target="_blank"><i class='bx bxl-github'></i></a>
-        <a href="https://www.youtube.com/@azizulever" target="_blank"><i class='bx bxl-youtube' ></i></a>
-        <a href="https://linktr.ee/azizulever" target="_blank"><i class='bx bx-link'></i></a>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content fade-in-up">
+        <span>Flutter Developer & Designer</span>
+        <h1>Building <span class="highlight">Beautiful</span> & <span class="highlight">Functional</span> Mobile
+          Experiences</h1>
+        <p>I design and develop cross-platform mobile applications that deliver exceptional user experiences. Passionate
+          about clean code, intuitive design, and continuous learning.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="cta-btn">View My Work</a>
+          <a href="#contact" class="secondary-btn">
+            <i class="fas fa-envelope"></i>
+            Contact Me
+          </a>
+        </div>
       </div>
-      <a href="assets/Resume - Azizul Islam.pdf" target="_blank" class="btn"> Resume </a>
-    </div>
-
-    <div class="home-img">
-      <img src="assets/profile.png" alt="myimage">
     </div>
   </section>
 
-<!--   about section -->
-  <section class="about" id="about">
-    
-    <div class="about-img">
-      <img src="assets/profile2.png" alt="">
-    </div>
-
-    <div class="about-content">
-      <h2 class="heading"> About <span>Me</span> </h2>
-      <h3> Frontend Developer! </h3>
-      <p>Designing is more than just a job; it's a passion and a way of life for me. The process of creating something from scratch and bringing an idea to life through design brings me immense fulfillment. I thrive on exploring a wide range of styles, colors, and textures to craft something truly unique and visually captivating. However, design is not solely about aesthetics; it's about problem-solving and creating functional yet beautiful solutions. My designs are heavily influenced by the world around me, drawing inspiration from various cultures and incorporating their essence into my work.</p>
-      <a href="https://www.facebook.com/azizulever" target="_blank" class="btn"> Thoughts </a>
-    </div>
-  </section>
-
-<!--   education section -->
-  <section class="education" id="education">
-    <h2 class="heading"> My <span> Education </span> </h2>
-    <div class="edu-content">
-      <li>
-      <div class="edu-img">
-        <img src="assets/smuct.png" alt="smuct_logo">
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <p>Get to know more about me, my background, and what I do</p>
       </div>
-        <h2>Shanto-Mariam University of Creative Technology</h2>
-        <h3>Bachelor of Science in Computer Science and Engineering</h3>
-        <p>March 2022 - March 2027</p>
-        <p>Dhaka, Bangladesh</p>
-      </li>
-
-      <li>
-      <div class="edu2-img">
-        <img src="assets/Mascot.jpg" alt="mascot_logo">
+      <div class="about-content">
+        <div class="about-image">
+          <img src="/api/placeholder/400/500" alt="Profile Image">
+        </div>
+        <div class="about-text">
+          <h3>I'm a Flutter Developer with a passion for creating beautiful mobile experiences</h3>
+          <p>Hi there! I'm a dedicated Flutter developer and UI/UX designer with a strong focus on creating intuitive
+            and engaging mobile applications. With several years of experience in the field, I've had the opportunity to
+            work on a diverse range of projects that have honed my skills in both development and design.</p>
+          <p>I believe in the power of continuous learning and staying updated with the latest technologies and design
+            trends. My approach combines technical expertise with creative problem-solving to deliver apps that not only
+            look great but also provide exceptional user experiences.</p>
+          <p>When I'm not coding or designing, you can find me exploring new technologies, contributing to open-source
+            projects, or sharing my knowledge through tech communities and blogs.</p>
+          <div class="stats">
+            <div class="stat-item">
+              <h4>4+</h4>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat-item">
+              <h4>20+</h4>
+              <p>Projects Completed</p>
+            </div>
+            <div class="stat-item">
+              <h4>15+</h4>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+        </div>
       </div>
-        <h2>Mascot Innovative College</h2>
-        <h3>Higher Secondary</h3>
-        <p>July 2018 - July 2020</p>
-        <p>Dhaka, Bangladesh</p>
-      </li>
-    </div>
-  </section>
-
-  <!-- skill section -->
-  <section class="skills" id="skills">
-    <h2 class="heading"> My <span>Skills</span> </h2>
-    <div class="skill-content">
-      <p> <span>Languages:</span> C | C++ | Javascript | Python </p>
-      <p> <span>Frontend:</span> HTML | CSS </p>
-      <p><span>Frameworks:</span> Bootstrap </p>
-      <p><span>Others:</span> Git | GitHub </p>
     </div>
   </section>
 
-  <!-- project section -->
-  <section class="projects" id="projects">
-    <h2 class="heading"> Some things I've <span> Build </span> </h2>
-    <dev class="proj-content">
-      <div class="project-box">
-      <img src="assets/calculator.png" alt="calculator">
-      <div class="proj-layer">
-        <h4> Web Calculator </h4>
-        <p>This calculator can perform various mathematical operations such as addition, subtraction, multiplication, division, and more complex calculations.</p>
-        <a href="https://azizulever.github.io/Calculator/" target="_blank"><i class='bx bx-link-external'></i></a>
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2>My Skills</h2>
+        <p>Here are some of my skills and expertise</p>
       </div>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3>Development</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <i class="fab fa-flutter"></i>
+              <p>Flutter</p>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-mobile-alt"></i>
+              <p>Dart</p>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-android"></i>
+              <p>Android</p>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-apple"></i>
+              <p>iOS</p>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-code"></i>
+              <p>Firebase</p>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-react"></i>
+              <p>React Native</p>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-js"></i>
+              <p>JavaScript</p>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-html5"></i>
+              <p>HTML/CSS</p>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Design</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <i class="fab fa-figma"></i>
+              <p>Figma</p>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-pencil-alt"></i>
+              <p>UI Design</p>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-user"></i>
+              <p>UX Design</p>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-paint-brush"></i>
+              <p>Adobe XD</p>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-layer-group"></i>
+              <p>Prototyping</p>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-palette"></i>
+              <p>Color Theory</p>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-universal-access"></i>
+              <p>Accessibility</p>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-mobile"></i>
+              <p>Responsive</p>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Tools & Platforms</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <i class="fab fa-git-alt"></i>
+              <p>Git</p>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-github"></i>
+              <p>GitHub</p>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-database"></i>
+              <p>SQLite</p>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-server"></i>
+              <p>REST APIs</p>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-cloud"></i>
+              <p>AWS</p>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-terminal"></i>
+              <p>CLI</p>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-code-branch"></i>
+              <p>CI/CD</p>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-tasks"></i>
+              <p>JIRA</p>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Soft Skills</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <i class="fas fa-users"></i>
+              <p>Teamwork</p>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-comments"></i>
+              <p>Communication</p>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-lightbulb"></i>
+              <p>Problem Solving</p>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-clock"></i>
+              <p>Time Management</p>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-project-diagram"></i>
+              <p>Project Management</p>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-brain"></i>
+              <p>Critical Thinking</p>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-book"></i>
+              <p>Continuous Learning</p>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-smile"></i>
+              <p>Adaptability</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </dev>
-  </section>
 
-  <!-- achievement section -->
-  <section class="achievements" id="achievements">
-    <h2 class="heading"> My <span>Achievements</span></h2>
-    <dev class="achv-content">
-      <div class="achv-box">
-        <i class='bx bx-code-alt'></i>
-        <h3> Organized A Programming Contest </h3>
-        <p> On October 9, 2022, we arranged an intra-batch programming contest, hosted by our very own Sazzad Hossain Bhuiyan Sir. Along with him me and some of my friends performed the role as moderator. </p>
-        <a href="https://www.linkedin.com/posts/azizulever_its-really-a-great-opportunity-for-me-that-activity-7039902372352974848-Py7-?utm_source=share&utm_medium=member_desktop" target="_blank" class="btn"> Read More </a>
-      </div>
-    
-      <div class="achv-box">
-        <i class='bx bx-code-alt'></i>
-        <h3> Achieved TOP - 1 at SMUCT CSE FEST 2023 - Programming Contest. </h3>
-        <p> Accomplished TOP-1 at "SMUCT CSE FEST 2023 - Programming Contest" with the incredible support of my talented teammates. </p>
-        <a href="https://www.linkedin.com/posts/azizulever_secured-rank-top-1-at-smuct-cse-fest-2023-activity-7088725886492971008-Tf_m?utm_source=share&utm_medium=member_desktop" target="_blank" class="btn"> Read More </a>
-      </div>
-    </dev>
-  </section>
 
-  <!-- contact section -->
-  <section class="contactme" id="contactme">
-    <h2 class="heading"> Contact <span>Me!</span></h2>
-
-    <form action="#">
-      <div class="input-box">
-        <input type="text" placeholder="Full Name">
-        <input type="email" placeholder="Email Address">
-      </div>
-      <div class="input-box">
-        <input type="number" placeholder="Mobile Number">
-        <input type="text" placeholder="Email Subject">
-      </div>
-      <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-      <input type="submit" value="Send Message" class="btn">
-    </form>
-  </section>
-
-  <!-- footer section -->
-  <footer class="footer">
-    <div class="footer-text">
-      <p> Thanks for visting my portfolio. </p>
     </div>
+  </section>
 
-    <div class="footer-iconTop">
-      <a href="#home"><i class='bx bx-chevrons-up' ></i></a>
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2>My Projects</h2>
+        <p>Check out some of my latest work and projects</p>
+      </div>
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="ui">UI/UX Design</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" data-category="mobile">
+          <div class="project-img">
+            <img src="/api/placeholder/400/300" alt="FitTrack App">
+          </div>
+          <div class="project-content">
+            <h4>FitTrack</h4>
+            <p>A comprehensive fitness tracking app with personalized workout plans, nutrition tracking, and progress
+              analytics.</p>
+            <div class="project-tags">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Firebase</span>
+              <span class="project-tag">Health API</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i>
+                Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="mobile">
+          <div class="project-img">
+            <img src="/api/placeholder/400/300" alt="TravelBuddy App">
+          </div>
+          <div class="project-content">
+            <h4>TravelBuddy</h4>
+            <p>An AI-powered travel companion app that helps users plan trips, discover local attractions, and navigate
+              foreign cities.</p>
+            <div class="project-tags">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Google Maps API</span>
+              <span class="project-tag">NLP</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i>
+                Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="web">
+          <div class="project-img">
+            <img src="/api/placeholder/400/300" alt="CryptoTracker Web App">
+          </div>
+          <div class="project-content">
+            <h4>CryptoTracker</h4>
+            <p>A real-time cryptocurrency tracking platform with portfolio management, price alerts, and market
+              analytics.</p>
+            <div class="project-tags">
+              <span class="project-tag">Flutter Web</span>
+              <span class="project-tag">Firebase</span>
+              <span class="project-tag">REST API</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i>
+                Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="ui">
+          <div class="project-img">
+            <img src="/api/placeholder/400/300" alt="eCommerce UI Design">
+          </div>
+          <div class="project-content">
+            <h4>ShopSmart UI</h4>
+            <p>A comprehensive UI/UX design for an e-commerce platform focused on intuitive navigation and seamless
+              checkout experience.</p>
+            <div class="project-tags">
+              <span class="project-tag">UI Design</span>
+              <span class="project-tag">Figma</span>
+              <span class="project-tag">Prototyping</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                Case Study
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-behance"></i>
+                Behance
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="mobile">
+          <div class="project-img">
+            <img src="/api/placeholder/400/300" alt="MediCare App">
+          </div>
+          <div class="project-content">
+            <h4>MediCare</h4>
+            <p>A telemedicine app that connects patients with healthcare providers for virtual consultations,
+              prescription management, and health monitoring.</p>
+            <div class="project-tags">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">WebRTC</span>
+              <span class="project-tag">Firebase</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i>
+                Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="web">
+          <div class="project-img">
+            <img src="/api/placeholder/400/300" alt="TaskFlow Web App">
+          </div>
+          <div class="project-content">
+            <h4>TaskFlow</h4>
+            <p>A project management web application with team collaboration features, task tracking, and productivity
+              analytics.</p>
+            <div class="project-tags">
+              <span class="project-tag">Flutter Web</span>
+              <span class="project-tag">Firebase</span>
+              <span class="project-tag">Cloud Functions</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i>
+                Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header">
+        <h2>Education & Experience</h2>
+        <p>My academic background and professional journey</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2022 - Present</div>
+          <div class="timeline-content">
+            <h4>Senior Flutter Developer</h4>
+            <h5>TechInnovate Solutions</h5>
+            <p>Leading a team of developers in building cross-platform mobile applications for enterprise clients.
+              Implementing best practices, architecture patterns, and mentoring junior developers.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2020 - 2022</div>
+          <div class="timeline-content">
+            <h4>Mobile App Developer</h4>
+            <h5>DigitalCraft Studios</h5>
+            <p>Developed and maintained multiple Flutter applications with complex UI/UX designs. Collaborated with
+              designers and backend developers to deliver high-quality mobile experiences.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2019 - 2020</div>
+          <div class="timeline-content">
+            <h4>UI/UX Designer & Developer</h4>
+            <h5>CreativeMinds Agency</h5>
+            <p>Created user interfaces and experiences for mobile applications. Implemented designs using Flutter
+              framework and collaborated with the product team to refine user journeys.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2017 - 2019</div>
+          <div class="timeline-content">
+            <h4>MSc in Computer Science</h4>
+            <h5>Tech University</h5>
+            <p>Specialized in Mobile Application Development and Human-Computer Interaction. Thesis focused on improving
+              performance optimization techniques in Flutter applications.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2013 - 2017</div>
+          <div class="timeline-content">
+            <h4>BSc in Software Engineering</h4>
+            <h5>State University</h5>
+            <p>Graduated with honors. Participated in multiple hackathons and developed a passion for mobile app
+              development through various personal and academic projects.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p>Feel free to contact me for any project or collaboration</p>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Let's Talk About Your Project</h3>
+          <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision. Feel
+            free to reach out through any of the following channels.</p>
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-detail-text">
+                <h4>Email</h4>
+                <p>hello@yourname.com</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="contact-detail-text">
+                <h4>Phone</h4>
+                <p>+1 (555) 123-4567</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-detail-text">
+                <h4>Location</h4>
+                <p>San Francisco, CA</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="#" class="social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-dribbble"></i>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h4>About Me</h4>
+          <p>Flutter developer and UI/UX designer passionate about creating beautiful and functional mobile experiences.
+            Always eager to take on new challenges and push the boundaries of what's possible.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="#">Mobile App Development</a></li>
+            <li><a href="#">UI/UX Design</a></li>
+            <li><a href="#">Frontend Development</a></li>
+            <li><a href="#">Consultation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Me</h4>
+          <ul class="footer-links">
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Dribbble</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 <span>DevFolio</span>. All Rights Reserved.</p>
+      </div>
     </div>
   </footer>
 
-  <!-- scroll reveal -->
-  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- Scroll to Top Button -->
+  <div class="scroll-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
 
-  <!-- typed js -->
-  <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-
-  <!-- custom js -->
+  <!-- JavaScript -->
   <script src="script.js"></script>
-
-<!--   <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script> -->
 </body>
 
 </html>
