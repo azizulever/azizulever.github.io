@@ -279,56 +279,69 @@ header {
 }
 
 .skills-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
-.skill-category h3 {
-  font-size: 1.5rem;
+.skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.skills-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.skill-bar {
   margin-bottom: 30px;
-  color: var(--dark);
-  position: relative;
-  display: inline-block;
 }
 
-.skill-category h3::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 40px;
-  height: 3px;
-  background-color: var(--primary);
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
 }
 
-.skill-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 20px;
-}
-
-.skill-item {
-  background-color: white;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: var(--box-shadow);
-  text-align: center;
-  transition: var(--transition);
-}
-
-.skill-item:hover {
-  transform: translateY(-5px);
-}
-
-.skill-item i {
-  font-size: 2rem;
-  color: var(--primary);
-  margin-bottom: 10px;
-}
-
-.skill-item p {
+.skill-info p {
   font-weight: 500;
+  margin: 0;
+}
+
+/* Skills Section Progress Bar Styling */
+.skill-progress {
+  height: 10px;
+  background: rgba(26, 26, 46, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  background: var(--primary); /* Changed from gradient to solid primary color */
+  border-radius: 5px;
+  transition: width 1s ease-in-out;
+}
+
+.percent {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .skills-row {
+    flex-direction: column;
+  }
+  
+  .skills-column {
+    width: 100%;
+  }
 }
 
 /* Projects Section */
@@ -751,7 +764,6 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 992px) {
-
   .about-content,
   .skills-container,
   .contact-container {
@@ -768,7 +780,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-
   .nav-links,
   .cta-btn {
     display: none;
