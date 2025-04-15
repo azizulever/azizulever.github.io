@@ -14,11 +14,12 @@
   <header>
     <div class="container">
       <nav class="navbar">
-        <a href="#" class="logo">Azizul<span> Islam</span></a>
-        <ul class="nav-links">
+        <a href="#home" class="logo">Azizul<span> Islam</span></a>
+        <ul class="nav-links" style="margin-left: auto;">
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#education">Education</a></li>
+          <li><a href="#education">Education & Experience</a></li>
+          <li><a href="#achievements">Achievements</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <a href="#contact" class="cta-btn">Hire Me</a>
@@ -33,33 +34,39 @@
   <section class="hero" id="home">
     <div class="container">
       <div class="hero-wrapper">
-        <div class="hero-image fade-in-up">
-          <img src="assets/profile.png" alt="Profile Image">
-        </div>
-        <div class="hero-content fade-in-up">
-          <span>Flutter Developer & Designer</span>
-          <h1>Building <span class="highlight">Beautiful</span> & <span class="highlight">Functional</span> Mobile
-            Experiences</h1>
-          <div class="stats">
-            <div class="stat-item">
-              <h4>1+</h4>
-              <p>Years Experience</p>
-            </div>
-            <div class="stat-item">
-              <h4>5+</h4>
-              <p>Projects</p>
-            </div>
-            <div class="stat-item">
-              <h4>2+</h4>
-              <p>Happy Clients</p>
-            </div>
+        <div class="hero-content-col">
+          <div class="hero-image fade-in-up">
+            <img src="assets/profile.png" alt="Profile Image">
+            <div class="image-bg-shape"></div>
           </div>
-          <div class="hero-btns">
-            <a href="#projects" class="cta-btn">View My Work</a>
-            <a href="#contact" class="secondary-btn">
-              <i class="fas fa-envelope"></i>
-              Contact Me
-            </a>
+        </div>
+        <div class="hero-content-col">
+          <div class="hero-content fade-in-up">
+            <div class="hero-title-area">
+              <span class="hero-label">Flutter Developer & Designer</span>
+              <h1>Building <span class="highlight">Beautiful</span> & <span class="highlight">Functional</span> Mobile Experiences</h1>
+            </div>
+            <div class="stats">
+              <div class="stat-item">
+                <h4>1+</h4>
+                <p>Years Experience</p>
+              </div>
+              <div class="stat-item">
+                <h4>5+</h4>
+                <p>Projects</p>
+              </div>
+              <div class="stat-item">
+                <h4>2+</h4>
+                <p>Happy Clients</p>
+              </div>
+            </div>
+            <div class="hero-btns">
+              <a href="#projects" class="cta-btn">View My Work</a>
+              <a href="https://drive.google.com/file/d/1gxMytnmWSQcoIlvXEb-kRcWiRoC4mfdM/view?usp=sharing" target="_blank" class="secondary-btn">
+                <i class="fas fa-download"></i>
+                My Resume
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -257,7 +264,7 @@
               <span class="project-tag">API</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/azizulever/task_manager" target="_blank" class="project-link">
+              <a href="https://github.com/azizulever/task_manager/tree/task_manager_using_getx" target="_blank" class="project-link">
                 <i class="fab fa-github"></i>
                 Source Code
               </a>
@@ -322,15 +329,88 @@
     </div>
   </section>
 
+  <!-- Achievements Section -->
+  <section id="achievements">
+    <div class="container">
+      <div class="section-header">
+        <h2>My Achievements and Certification</h2>
+        <p>Notable accomplishments and recognitions from my journey</p>
+      </div>
+      <div class="achievements-container">
+        <div class="achievement-card">
+          <div class="achievement-card-top">
+            <div class="achievement-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="achievement-content">
+              <h3>Regionalist</h3>
+              <p>ICPC Dhaka Regional 2024 - DIU</p>
+            </div>
+          </div>
+          <a href="https://icpc.global/ICPCID/N5BN08DYYXI8" target="_blank" class="achievement-link">
+            View Certificate <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-card-top">
+            <div class="achievement-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div class="achievement-content">
+              <h3>Champion</h3>
+              <p>Won 1st place in the SMUCT CSE FEST 2023 - programming contest by solving 11/15 problems with my team</p>
+            </div>
+          </div>
+          <a href="" target="_blank" class="achievement-link">
+            View Certificate <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-card-top">
+            <div class="achievement-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <div class="achievement-content">
+              <h3>App Development with Flutter</h3>
+              <p>This has helped me learn more about building apps for different platforms.</p>
+            </div>
+          </div>
+          <a href="https://ostad.app/share/certificate/c24158-azizul-islam" target="_blank" class="achievement-link">
+            View Credential <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-card-top">
+            <div class="achievement-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="achievement-content">
+              <h3>Problem Setter</h3>
+              <p>Hosted a intra-batch programming contest along with Tanbir Ramim, Tasif Hossain, Naimur Hasan, and I played the role of moderator and problem setting.</p>
+            </div>
+          </div>
+          <a href="https://github.com/azizulever" target="_blank" class="achievement-link">
+            View More <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section id="contact">
     <div class="container">
-      <div class="contact-container contact-centered">
-        <div class="contact-info">
-          <h3>Let's Talk About Your Project</h3>
-          <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision. Feel
-            free to reach out through any of the following channels.</p>
-          <div class="contact-details">
+      <div class="contact-container">
+        <div class="contact-card">
+          <div class="contact-header">
+            <h3>Let's Talk</h3>
+            <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision. Feel
+              free to reach out through any of the following channels.</p>
+          </div>
+          <div class="contact-info-grid">
             <div class="contact-detail">
               <div class="contact-icon">
                 <i class="fas fa-envelope"></i>
@@ -350,16 +430,19 @@
               </div>
             </div>
           </div>
-          <div class="contact-social">
-            <a href="https://www.linkedin.com/in/azizulever/" target="_blank" class="social-icon">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://github.com/azizulever" target="_blank" class="social-icon">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.facebook.com/azizulever" target="_blank" class="social-icon">
-              <i class="fab fa-facebook"></i>
-            </a>
+          <div class="contact-social-wrapper">
+            <h4 class="social-heading">Connect with me</h4>
+            <div class="contact-social">
+              <a href="https://www.linkedin.com/in/azizulever/" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/azizulever" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.facebook.com/azizulever" target="_blank" class="social-icon">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -382,6 +465,7 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#education">Education</a></li>
+            <li><a href="#achievements">Achievements</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
