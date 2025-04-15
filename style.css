@@ -17,6 +17,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 100%;
 }
 
 body {
@@ -40,6 +41,13 @@ ul {
   padding: 0 20px;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    width: 95%;
+    max-width: 100%;
+  }
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -61,7 +69,7 @@ header {
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--primary);
-  }
+}
 
 .logo span {
   color: var(--dark);
@@ -107,6 +115,7 @@ header {
 @media (max-width: 768px) {
   .navbar {
     justify-content: space-between;
+    padding: 0 10px;
   }
   
   .nav-links {
@@ -125,9 +134,24 @@ header {
   
   .nav-links.active {
     display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    z-index: 100;
+    padding: 0;
   }
   
   .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .nav-links.active li {
+    margin: 0;
     width: 100%;
     text-align: center;
   }
@@ -137,8 +161,22 @@ header {
     padding: 15px 0;
   }
   
+  .nav-links.active li a {
+    display: block;
+    padding: 15px 0;
+    font-size: 1rem;
+  }
+  
   .logo {
     margin-right: 0;
+  }
+  
+  header .cta-btn {
+    display: none;
+  }
+  
+  .mobile-toggle {
+    display: block;
   }
 }
 
@@ -416,6 +454,22 @@ header {
   margin: 0 auto;
 }
 
+@media (max-width: 400px) {
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .section-header p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+}
+
 #skills {
   padding: 100px 0;
   background-color: rgba(94, 226, 255, 0.05);
@@ -520,6 +574,48 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 30px;
+}
+
+@media (max-width: 992px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .filter-btn {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .projects-filter {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+
+  .project-content h4 {
+    font-size: 1.2rem;
+  }
 }
 
 .project-card {
@@ -628,6 +724,12 @@ header {
   border-radius: 2px;
 }
 
+@media (max-width: 576px) {
+  .timeline-section-title {
+    font-size: 1.5rem;
+  }
+}
+
 .timeline {
   position: relative;
   max-width: 800px;
@@ -643,6 +745,12 @@ header {
   width: 2px;
   height: 100%;
   background-color: var(--gray);
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 30px;
+  }
 }
 
 .timeline-item {
@@ -720,9 +828,21 @@ header {
   z-index: 1;
 }
 
+@media (max-width: 768px) {
+  .timeline-dot {
+    left: 30px;
+  }
+}
+
 .timeline-content h4 {
   font-size: 1.2rem;
   margin-bottom: 10px;
+}
+
+@media (max-width: 576px) {
+  .timeline-content h4 {
+    font-size: 1.1rem;
+  }
 }
 
 .timeline-content h5 {
@@ -730,8 +850,45 @@ header {
   margin-bottom: 10px;
 }
 
+@media (max-width: 576px) {
+  .timeline-content h5 {
+    font-size: 0.95rem;
+  }
+}
+
 .timeline-content p {
   color: var(--gray);
+}
+
+@media (max-width: 768px) {
+  .timeline-content {
+    width: calc(100% - 70px);
+    margin-left: 70px !important;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content::before,
+  .timeline-item:nth-child(even) .timeline-content::before {
+    left: -10px;
+  }
+
+  .timeline-date {
+    top: -30px;
+    left: 0 !important;
+    right: auto !important;
+    transform: none !important;
+    width: fit-content;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .timeline-content {
+    padding: 20px 15px;
+  }
+
+  .timeline-content p {
+    font-size: 0.9rem;
+  }
 }
 
 /* Achievements Section */
@@ -745,6 +902,15 @@ header {
   grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
   gap: 30px;
   margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .achievements-container {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .achievement-card {
@@ -768,6 +934,12 @@ header {
   padding: 30px 30px 20px;
 }
 
+@media (max-width: 768px) {
+  .achievement-card-top {
+    padding: 20px 20px 15px;
+  }
+}
+
 .achievement-icon {
   display: flex;
   align-items: center;
@@ -787,9 +959,21 @@ header {
   color: var(--dark);
 }
 
+@media (max-width: 576px) {
+  .achievement-content h3 {
+    font-size: 1.2rem;
+  }
+}
+
 .achievement-content p {
   color: var(--gray);
   line-height: 1.6;
+}
+
+@media (max-width: 576px) {
+  .achievement-content p {
+    font-size: 0.95rem;
+  }
 }
 
 .achievement-link {
@@ -873,6 +1057,12 @@ header {
   margin-bottom: 15px;
 }
 
+@media (max-width: 768px) {
+  .contact-header h3 {
+    font-size: 1.6rem;
+  }
+}
+
 .contact-header p {
   color: var(--gray);
   max-width: 600px;
@@ -884,6 +1074,13 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .contact-info-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 
 .contact-detail {
@@ -899,6 +1096,14 @@ header {
 .contact-detail:hover {
   transform: translateY(-5px);
   box-shadow: var(--box-shadow);
+}
+
+@media (max-width: 576px) {
+  .contact-detail {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .contact-icon {
@@ -923,13 +1128,19 @@ header {
   text-align: left;
 }
 
+@media (max-width: 576px) {
+  .contact-detail-text {
+    text-align: center;
+  }
+}
+
 contact-detail-text h4 {
   font-size: 1.2rem;
   margin-bottom: 5px;
   color: var(--dark);
 }
 
-.contact-detail-text p {
+contact-detail-text p {
   color: var(--gray);
   margin: 0;
 }
@@ -951,6 +1162,12 @@ contact-detail-text h4 {
   align-items: center;
 }
 
+@media (max-width: 576px) {
+  .contact-social {
+    gap: 15px;
+  }
+}
+
 .social-icon {
   width: 50px;
   height: 50px;
@@ -964,6 +1181,14 @@ contact-detail-text h4 {
   transition: var(--transition);
 }
 
+@media (max-width: 576px) {
+  .social-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+}
+
 .social-icon:hover {
   background-color: var(--primary);
   transform: translateY(-8px);
@@ -973,14 +1198,6 @@ contact-detail-text h4 {
 @media (max-width: 768px) {
   .contact-card {
     padding: 30px 20px;
-  }
-  
-  .contact-header h3 {
-    font-size: 1.8rem;
-  }
-  
-  .contact-info-grid {
-    grid-template-columns: 1fr;
   }
 }
 
@@ -1032,6 +1249,12 @@ footer {
   width: 30px;
   height: 2px;
   background-color: var(--primary);
+}
+
+@media (max-width: 320px) {
+  .footer-col h4 {
+    font-size: 1.1rem;
+  }
 }
 
 .footer-col p {
@@ -1203,6 +1426,23 @@ footer {
   opacity: 1;
 }
 
+@media (max-width: 576px) {
+  .scroll-top {
+    bottom: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Fix for sticky header on mobile */
+@media (max-width: 768px) {
+  body {
+    padding-top: 80px;
+  }
+}
+
 /* Custom Flutter Icon */
 .flutter-icon {
   display: inline-block;
@@ -1217,4 +1457,34 @@ footer {
 /* Flutter icon color for the font awesome approach */
 .flutter-color {
   color: #45D1FD;
+}
+
+/* Extra small devices */
+@media (max-width: 320px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+/* Print styles for better resume printing */
+@media print {
+  header, footer, .scroll-top, .hero-btns, .contact-social-wrapper {
+    display: none !important;
+  }
+  
+  body {
+    color: black;
+    background: white;
+  }
+  
+  section {
+    page-break-inside: avoid;
+    padding: 20px 0 !important;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: none;
+    padding: 0 15px;
+  }
 }
