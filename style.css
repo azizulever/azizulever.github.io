@@ -230,9 +230,6 @@ header {
   align-items: center;
 }
 
-/* Hero Section - Revised */
-/* Keep existing hero section styles but update image related styles */
-
 .hero-image {
   position: relative;
   flex: 1;
