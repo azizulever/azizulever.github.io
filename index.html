@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Azizul Islam | Passionate Designer</title>
+  <title>Azizul Islam | Product Designer</title>
   <link rel="icon" type="image/x-icon" href="assets/hero-picture.png">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -15,15 +15,13 @@
   <header>
     <div class="container">
       <nav class="navbar">
-        <a href="#home" class="logo">Azizul<span> Islam</span></a>
-        <ul class="nav-links" style="margin-left: auto;">
-          <li><a href="#skills">Skills</a></li>
+        <a href="#home" class="logo">Azizul Islam <span>– Product Designer</span></a>
+        <ul class="nav-links">
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#education">Education & Experience</a></li>
-          <li><a href="#achievements">Achievements</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#education">Experiences</a></li>
+          <li class="mobile-only"><a href="javascript:void(0)" onclick="copyEmail()">Copy Email</a></li>
         </ul>
-        <a href="#contact" class="cta-btn">Hire Me</a>
+        <a href="javascript:void(0)" class="copy-email-btn" onclick="copyEmail()">Copy Email</a>
         <div class="mobile-toggle">
           <i class="fas fa-bars"></i>
         </div>
@@ -38,34 +36,21 @@
         <div class="hero-content-col">
           <div class="hero-image fade-in-up">
             <img src="assets/hero-picture.png" alt="Profile Image">
-            <div class="image-bg-shape"></div>
           </div>
         </div>
         <div class="hero-content-col">
           <div class="hero-content fade-in-up">
             <div class="hero-title-area">
-              <span class="hero-label">Flutter Developer & Designer</span>
-              <h1>Building <span class="highlight">Beautiful</span> & <span class="highlight">Functional</span> Mobile Experiences</h1>
-            </div>
-            <div class="stats">
-              <div class="stat-item">
-                <h4>1+</h4>
-                <p>Years Experience</p>
-              </div>
-              <div class="stat-item">
-                <h4>5+</h4>
-                <p>Projects</p>
-              </div>
-              <div class="stat-item">
-                <h4>2+</h4>
-                <p>Happy Clients</p>
-              </div>
+              <span class="hero-label">Product Designer</span>
+              <h1>Designing <span class="highlight">Intuitive</span> & <span class="highlight">Meaningful</span> Digital Experiences</h1>
             </div>
             <div class="hero-btns">
-              <a href="#projects" class="cta-btn">View My Work</a>
+              <a href="mailto:contact.azizulislam@gmail.com" class="availability-badge">
+                <span class="green-dot"></span> Available for freelance
+              </a>
               <a href="https://drive.google.com/file/d/1hHXtWb9Kfkyp6uuIrsix7vKzL-udKAV2/view" target="_blank" class="secondary-btn">
-                <i class="fas fa-download"></i>
-                My Resume
+                <i class="fas fa-file-alt"></i>
+                See my resume
               </a>
             </div>
           </div>
@@ -74,82 +59,6 @@
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <div class="container">
-      <div class="section-header">
-        <h2>My Skills</h2>
-        <p>Here are some of my skills and expertise</p>
-      </div>
-      <div class="skills-container">
-        <div class="skills-row">
-          <div class="skills-column">
-            <div class="skill-bar">
-              <div class="skill-info">
-                <p>Flutter</p>
-                <p class="percent">80%</p>
-              </div>
-              <div class="skill-progress">
-                <div class="progress" style="width: 80%;"></div>
-              </div>
-            </div>
-
-            <div class="skill-bar">
-              <div class="skill-info">
-                <p>Firebase</p>
-                <p class="percent">70%</p>
-              </div>
-              <div class="skill-progress">
-                <div class="progress" style="width: 70%;"></div>
-              </div>
-            </div>
-
-            <div class="skill-bar">
-              <div class="skill-info">
-                <p>API Integration</p>
-                <p class="percent">75%</p>
-              </div>
-              <div class="skill-progress">
-                <div class="progress" style="width: 75%;"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills-column">
-            <div class="skill-bar">
-              <div class="skill-info">
-                <p>Figma</p>
-                <p class="percent">90%</p>
-              </div>
-              <div class="skill-progress">
-                <div class="progress" style="width: 90%;"></div>
-              </div>
-            </div>
-
-            <div class="skill-bar">
-              <div class="skill-info">
-                <p>Git</p>
-                <p class="percent">90%</p>
-              </div>
-              <div class="skill-progress">
-                <div class="progress" style="width: 90%;"></div>
-              </div>
-            </div>
-
-            <div class="skill-bar">
-              <div class="skill-info">
-                <p>GitHub</p>
-                <p class="percent">90%</p>
-              </div>
-              <div class="skill-progress">
-                <div class="progress" style="width: 90%;"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Projects Section -->
   <section id="projects">
@@ -160,132 +69,102 @@
       </div>
       <div class="projects-filter">
         <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
-        <button class="filter-btn" data-filter="web">Web Dev.</button>
-        <button class="filter-btn" data-filter="ui">UI/UX Design</button>
+        <button class="filter-btn" data-filter="web">Web Designs</button>
+        <button class="filter-btn" data-filter="app">App Designs</button>
+        <button class="filter-btn" data-filter="others">Others</button>
       </div>
       <div class="projects-grid">
-        <div class="project-card" data-category="mobile">
+        <div class="project-card" data-category="web">
           <div class="project-img">
-            <img src="assets/craftybay.png" alt="CraftyBay App">
+            <img src="assets/bdstall.png" alt="BDStall Landing Page UI Design">
           </div>
           <div class="project-content">
-            <h4>CraftyBay App</h4>
-            <p>Built a responsive eCommerce app in Flutter with product listings, category filtering, OTP
-              authentication, and a shopping cart, ensuring seamless UI/UX and optimal performance.</p>
+            <h4>BDStall Landing Page Redesign</h4>
+            <p>BDStall Landing Page Redesign — making buying and selling feel simpler and more trustworthy.</p>
             <div class="project-tags">
-              <span class="project-tag">Flutter</span>
-              <span class="project-tag">API</span>
+              <span class="project-tag">Figma</span>
+              <span class="project-tag">Figjam</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/azizulever/ecommerce" target="_blank" class="project-link">
-                <i class="fab fa-github"></i>
-                Source Code
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card" data-category="mobile">
-          <div class="project-img">
-            <img src="assets/tankibhai.png" alt="TankiBhai App">
-          </div>
-          <div class="project-content">
-            <h4>TankiBhai App</h4>
-            <p>Built a Flutter app to track bike and car mileage with fuel logs and real-time stats, ensuring a clean UI
-              and accurate performance insights.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Flutter</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/azizulever/TankiBhai_Android/releases" target="_blank" class="project-link">
+              <a href="https://www.behance.net/gallery/241595037/BDStall-Landing-Page-Redesign"
+                target="_blank" class="project-link">
                 <i class="fas fa-external-link-alt"></i>
-                Live Demo
-              </a>
-              <a href="https://github.com/azizulever/TankiBhai_Android" target="_blank" class="project-link">
-                <i class="fab fa-github"></i>
-                Source Code
+                View UI
               </a>
             </div>
           </div>
         </div>
         <div class="project-card" data-category="web">
           <div class="project-img">
-            <img src="assets/coderslobby.png" alt="CodersLobby">
+            <img src="assets/university-portal.png" alt="Student Portal Dashboard UI Design">
           </div>
           <div class="project-content">
-            <h4>CodersLobby</h4>
-            <p>A Competitive programming and problem solving website.</p>
+            <h4>Student Portal Dashboard UI Design</h4>
+            <p>Tried to redesign the student portal dashboard we use at our university — currently provided through a subscription with Pipilika Soft.</p>
             <div class="project-tags">
-              <span class="project-tag">HTML</span>
-              <span class="project-tag">CSS</span>
-              <span class="project-tag">JS</span>
-              <span class="project-tag">Firebase</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/azizulever/CodersLobby" target="_blank" class="project-link">
-                <i class="fab fa-github"></i>
-                Source Code
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card" data-category="ui">
-          <div class="project-img">
-            <img src="assets/amargate.png" alt="amargate UI Design">
-          </div>
-          <div class="project-content">
-            <h4>amargate UI</h4>
-            <p>A comprehensive UI/UX design for an home society which can track the whole society community daily
-              activities</p>
-            <div class="project-tags">
-              <span class="project-tag">UI Design</span>
               <span class="project-tag">Figma</span>
-              <span class="project-tag">Prototyping</span>
             </div>
             <div class="project-links">
-              <a href="https://www.figma.com/design/8Bh3HaO2MAjZM7yRYYAs0m/Resident-System?node-id=0-1&p=f&t=taBU4zJ84bftRPiz-0"
+              <a href="https://www.behance.net/gallery/232123659/Student-Portal-Dashboard-UIUX-Design"
                 target="_blank" class="project-link">
                 <i class="fas fa-external-link-alt"></i>
-                Live Demo
+                View UI
               </a>
             </div>
           </div>
         </div>
-        <div class="project-card" data-category="mobile">
+        <div class="project-card" data-category="app">
           <div class="project-img">
-            <img src="assets/taskmanager.png" alt="Task Manager App">
+            <img src="assets/fuelbhai.png" alt="FuelBhai UI Design">
           </div>
           <div class="project-content">
-            <h4>Task Manager App</h4>
-            <p>Built a Flutter Task Manager app with features like adding, updating, and managing tasks (New, In
-              Progress, Completed, Cancelled) using API integration for data synchronization.</p>
+            <h4>FuelBhai – Smart Fuel & Expense Tracker</h4>
+            <p>Led the full UX/UI design process from research to final delivery. Conducted 5 user interviews and designed 22+ screens. Built a consistent design system and ensured smooth developer handoff.</p>
             <div class="project-tags">
-              <span class="project-tag">Flutter</span>
-              <span class="project-tag">API</span>
+              <span class="project-tag">Figma</span>
+              <span class="project-tag">Vimeo</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/azizulever/task_manager/tree/task_manager_using_getx" target="_blank" class="project-link">
-                <i class="fab fa-github"></i>
-                Source Code
+              <a href="https://www.behance.net/gallery/239091199/FuelBhai-App-UIUX-Case-Study" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                UI/UX Case Study
               </a>
             </div>
           </div>
         </div>
-        <div class="project-card" data-category="ui">
+        <div class="project-card" data-category="others">
           <div class="project-img">
-            <img src="assets/tankibhaiUI.png" alt="TankiBhai UI Design">
+            <img src="assets/graphic-design-photo.png" alt="Social Media Poster Design">
           </div>
           <div class="project-content">
-            <h4>TankiBhai UI Design</h4>
-            <p>TankiBhai lets you easily track fuel, mileage, and costs with a clean, smooth, and smart experience.</p>
+            <h4>Social Media Poster Design</h4>
+            <p>Designed and created social media posters for various campaigns and events. Ensured visual consistency and brand alignment across all platforms.</p>
+            <div class="project-tags">
+              <span class="project-tag">Figma</span>
+              <span class="project-tag">Canva</span>
+            </div>
+            <div class="project-links">
+              <a href="https://www.behance.net/gallery/241402477/Social-Media-Poster-Design" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                View Designs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="app">
+          <div class="project-img">
+            <img src="assets/card-checkout.png" alt="Card Checkout UI Practice Design">
+          </div>
+          <div class="project-content">
+            <h4>Card Checkout UI Practice Design</h4>
+            <p>Created a practice UI design for a card checkout process. Focused on user experience and visual clarity to ensure seamless payment processing.</p>
             <div class="project-tags">
               <span class="project-tag">Figma</span>
             </div>
             <div class="project-links">
-              <a href="https://www.figma.com/design/dYRnrJti9SRTwpufl0qYk8/TankiBhai-UI?node-id=0-1&t=d25zqVfkiYR5ENUI-1" target="_blank" class="project-link">
+              <a href="https://www.behance.net/gallery/234521561/Smooth-Modern-Card-Checkout" target="_blank" class="project-link">
                 <i class="fas fa-external-link-alt"></i>
-                Live Demo
+                View UI
               </a>
             </div>
           </div>
@@ -298,126 +177,39 @@
   <section id="education">
     <div class="container">
       <div class="section-header">
-        <h2>Education & Experience</h2>
-        <p>My academic background and professional journey</p>
+        <h2>Experience & Education</h2>
       </div>
-
-      <!-- Education Section -->
-      <div class="timeline-section">
-        <h3 class="timeline-section-title">Education</h3>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">2022 - 2026</div>
-            <div class="timeline-content">
-              <h4>BSc in Computer Science & Engineering</h4>
-              <h5>Shanto-Mariam University of Creative Technology</h5>
-              <p>Hosted intra-batch programming contests and became Champion in 2023 by solving 11/15 problems with my team. Gained hands-on skills in Data Structures, Algorithms, OOP, and Competitive Programming using C/C++.</p>
-            </div>
+      <div class="exp-edu-grid">
+        <!-- Experience Column -->
+        <div class="exp-edu-column">
+          <h3 class="column-title"><i class="fas fa-briefcase"></i> Experience</h3>
+          <div class="exp-edu-card">
+            <div class="card-date">Mar 2024 — Present</div>
+            <h4>Freelance Product Designer</h4>
+            <h5>Remote</h5>
+            <p>Delivered UI/UX enhancements for mobile and web products. Converted user and stakeholder feedback into practical UX updates — user flows, information architecture, and screen improvements. Built and maintained lightweight design systems to keep designs consistent and speed up iteration.</p>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">2018 - 2020</div>
-            <div class="timeline-content">
-              <h4>HSC (Science)</h4>
-              <h5>Mascot Innovative College</h5>
-              <p>Completed Higher Secondary Education in Science with a strong foundation in Physics, Chemistry, Mathematics, and ICT.</p>
-            </div>
+          <div class="exp-edu-card">
+            <div class="card-date">Jan 2024 — Jun 2024</div>
+            <h4>Graphic Designer</h4>
+            <h5>Shanto-Mariam University of Creative Technology</h5>
+            <p>Created graphic designs and social media content for the Department of CSE & CSIT. Planned and executed social media marketing strategies to increase reach and engagement.</p>
           </div>
         </div>
-      </div>
-
-      <!-- Experience Section -->
-      <div class="timeline-section">
-        <h3 class="timeline-section-title">Experience</h3>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">Jan 2024 - Jun 2024 (6 mos)</div>
-            <div class="timeline-content">
-              <h4>Strategic Marketing Intern</h4>
-              <h5>Shanto-Mariam University of Creative Technology</h5>
-              <p>Led digital marketing initiatives and social media campaigns for the CSE & CSIT Department, boosting
-                online engagement and brand presence.
-                Utilized Figma for visuals and executed strategies in advertising, consulting, and business marketing.
-              </p>
-            </div>
+        <!-- Education Column -->
+        <div class="exp-edu-column">
+          <h3 class="column-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+          <div class="exp-edu-card">
+            <div class="card-date">2022 — 2026</div>
+            <h4>B.Sc. in Computer Science & Engineering</h4>
+            <h5>Shanto-Mariam University of Creative Technology</h5>
+            <p>Gained a solid foundation in design thinking, human-computer interaction, and user-centered design principles alongside core CS fundamentals.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Achievements Section -->
-  <section id="achievements">
-    <div class="container">
-      <div class="section-header">
-        <h2>My Achievements and Certification</h2>
-        <p>Notable accomplishments and recognitions from my journey</p>
-      </div>
-      <div class="achievements-container">
-        <div class="achievement-card">
-          <div class="achievement-card-top">
-            <div class="achievement-icon">
-              <i class="fas fa-award"></i>
-            </div>
-            <div class="achievement-content">
-              <h3>Regionalist</h3>
-              <p>ICPC Dhaka Regional 2024 - DIU</p>
-            </div>
-          </div>
-          <a href="https://icpc.global/ICPCID/N5BN08DYYXI8" target="_blank" class="achievement-link">
-            View Certificate <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-
-        <div class="achievement-card">
-          <div class="achievement-card-top">
-            <div class="achievement-icon">
-              <i class="fas fa-trophy"></i>
-            </div>
-            <div class="achievement-content">
-              <h3>Champion</h3>
-              <p>Won 1st place in the SMUCT CSE FEST 2023 - programming contest by solving 11/15 problems with my team</p>
-            </div>
-          </div>
-          <a href="https://www.linkedin.com/posts/azizulever_secured-rank-top-1-at-smuct-cse-fest-2023-activity-7088725886492971008-Tf_m?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAD1qrGwBDQPVVjp2e-Uf4i17mx6MsOywvJk" target="_blank" class="achievement-link">
-            View Credential <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-
-        <div class="achievement-card">
-          <div class="achievement-card-top">
-            <div class="achievement-icon">
-              <i class="fas fa-certificate"></i>
-            </div>
-            <div class="achievement-content">
-              <h3>App Development with Flutter</h3>
-              <p>This has helped me learn more about building apps for different platforms.</p>
-            </div>
-          </div>
-          <a href="https://ostad.app/share/certificate/c24158-azizul-islam" target="_blank" class="achievement-link">
-            View Certificate <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-
-        <div class="achievement-card">
-          <div class="achievement-card-top">
-            <div class="achievement-icon">
-              <i class="fas fa-star"></i>
-            </div>
-            <div class="achievement-content">
-              <h3>Problem Setter</h3>
-              <p>Hosted a intra-batch programming contest along with Tanbir Ramim, Tasif Hossain, Naimur Hasan, and I played the role of moderator and problem setting.</p>
-            </div>
-          </div>
-          <a href="https://www.linkedin.com/posts/azizulever_its-really-a-great-opportunity-for-me-that-activity-7039902372352974848-Py7-?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAD1qrGwBDQPVVjp2e-Uf4i17mx6MsOywvJk" target="_blank" class="achievement-link">
-            View Credential <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Contact Section -->
   <section id="contact">
@@ -441,11 +233,11 @@
             </div>
             <div class="contact-detail">
               <div class="contact-icon">
-                <i class="fas fa-map-marker-alt"></i>
+                <i class="fas fa-phone-alt"></i>
               </div>
               <div class="contact-detail-text">
-                <h4>Location</h4>
-                <p>Dhaka, Bangladesh</p>
+                <h4>Phone</h4>
+                <p>+880 1768-044-568</p>
               </div>
             </div>
           </div>
@@ -457,6 +249,9 @@
               </a>
               <a href="https://github.com/azizulever" target="_blank" class="social-icon">
                 <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.behance.net/azizulever" target="_blank" class="social-icon">
+                <i class="fab fa-behance"></i>
               </a>
               <a href="https://www.facebook.com/azizulever" target="_blank" class="social-icon">
                 <i class="fab fa-facebook"></i>
@@ -474,23 +269,20 @@
       <div class="footer-container simplified">
         <div class="footer-col about">
           <h4>About Me</h4>
-          <p>Flutter developer and UI/UX designer passionate about creating beautiful and functional mobile experiences.
-            Always eager to take on new challenges and push the boundaries of what's possible.</p>
+          <p>Product designer passionate about crafting clean, simple, and meaningful digital experiences for websites and mobile apps. I focus on what the user actually needs — nothing more, nothing less.</p>
         </div>
         <div class="footer-col">
           <h4>Quick Links</h4>
           <ul class="footer-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#education">Experiences</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 <span>Azizul Islam</span>. All Rights Reserved.</p>
+        <p>&copy; 2026 <span>Azizul Islam</span>. All Rights Reserved.</p>
       </div>
     </div>
   </footer>
